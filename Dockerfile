@@ -49,5 +49,6 @@ RUN pnpm run build
 # EXPOSE 3000 
 
 # Definisci il comando per avviare l'applicazione
-CMD [ "pnpm", "start" ]
+CMD ["node", "--max-old-space-size=4096", "dist/addon.js"]
+
 
